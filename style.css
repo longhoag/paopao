@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+}
+.container .album {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.container .album .outer {
+    
+    height: 250px;
+    width: 250px;
+    background-color: rgb(21,21,21);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container .album .card {
+    height: 300px;
+    width: 250px;
+    position: relative;
+    left: 25%;
+    background-color: red;
+
+}
+.container .album .inner { 
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: white;
+
+}

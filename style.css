@@ -25,13 +25,20 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    box-shadow: rgba(0,0,0,0.15) 1.95px 1.95px 2.6px;
 }
 .container .album .card {
     height: 300px;
     width: 250px;
     position: relative;
     left: 25%;
-    background-color: red;
+    background-color: black;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(0,0,0,0.15) 1.95px 1.95px 2.6px;
+
 
 }
 .container .album .inner { 
@@ -39,5 +46,28 @@
     width: 100px;
     border-radius: 50%;
     background-color: white;
+    overflow: hidden;
+    display: flex;
+   
 
+}
+
+.container .album .card img {
+    width: 120%;
+}
+.container .album .outer .inner img {
+    width: 100%;
+}
+
+.container .album .outer {
+    z-index: -1;
+    animation:rotate 2s infinite linear;
+}
+@keyframes rotate {
+    0% {
+        transform: rotateZ(0deg);
+    }
+    100% {
+        transform: rotateZ(360deg);
+    }
 }
